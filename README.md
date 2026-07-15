@@ -56,21 +56,13 @@ python -m send_dm send "你好" --sec-uid "MS4wLjABAAAA..."
 
 ### 4. 按抖音号发送
 
-输入纯数字抖音号，自动解析后发送。
+输入抖音号，自动解析后发送。
 
 ```bash
 python -m send_dm "测试私信收发功能" --douyin-id 379250456
 ```
 
-### 5. 纯数字抖音号简写发送
-
-第一个位置参数为纯数字抖音号时，自动识别为目标账号。
-
-```bash
-python -m send_dm 379250456 "测试私信收发功能"
-```
-
-### 6. 接收私信
+### 5. 接收私信
 
 持续监听私信消息。
 
@@ -78,7 +70,7 @@ python -m send_dm 379250456 "测试私信收发功能"
 python -m send_dm recv
 ```
 
-### 7. 自动回复
+### 6. 自动回复
 
 监听新私信，并调用大模型自动回复。
 
@@ -86,13 +78,13 @@ python -m send_dm recv
 python -m send_dm autoreply
 ```
 
-### 8. 指定模型参数启动自动回复
+### 7. 指定模型参数启动自动回复
 
 ```bash
 python -m send_dm autoreply --model deepseek-v4-flash --base-url https://dashscope.aliyuncs.com/compatible-mode/v1
 ```
 
-### 9. 指定 env / profile
+### 8. 指定 env / profile
 
 指定环境文件或浏览器资料目录。
 
@@ -102,7 +94,7 @@ python -m send_dm autoreply --env ".env" --profile "E:\.pw-douyin-profile"
 python -m send_dm send "你好" --env ".env" --profile "E:\.pw-douyin-profile"
 ```
 
-### 10. 查看帮助
+### 9. 查看帮助
 
 ```bash
 python -m send_dm send --help
@@ -110,7 +102,7 @@ python -m send_dm recv --help
 python -m send_dm autoreply --help
 ```
 
-### 11. 运行测试
+### 10. 运行测试
 
 ```bash
 python -m unittest tests.test_cli_resolution -v

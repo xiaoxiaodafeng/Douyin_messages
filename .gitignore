@@ -1,0 +1,22 @@
+﻿# secrets / local env
+.env
+search_context.txt
+search_context.py
+
+# local docs not for upload
+docs/
+
+# python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# test / tooling cache
+.pytest_cache/
+.mypy_cache/
+
+# local runtime
+*.log
+.DS_Store
+Thumbs.db

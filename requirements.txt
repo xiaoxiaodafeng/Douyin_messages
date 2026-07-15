@@ -1,0 +1,8 @@
+﻿python-dotenv
+requests
+PyExecJS
+protobuf3_to_dict
+playwright
+websocket-client
+urllib3
+blackboxprotobuf
